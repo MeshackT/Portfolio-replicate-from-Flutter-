@@ -1,0 +1,131 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #e4a6d8;
+  font-family: 'Poppins';
+  
+}
+/* about section */
+#about, .portfoliobackground{
+  background-color: white;
+  padding-bottom: 20px;
+
+
+}
+#homeIndex{
+  background-color: #e4a6d8;
+
+}
+#aboutIndex{
+  background-color: #e4a6d8;
+
+}
+  /* 
+    index body starts
+  */
+.body-content, .container{
+  text-align: center;
+  height: min-content;
+  padding: 100px;
+  padding-bottom: 0%;
+
+}
+.body-content, .container, h1{
+  font-size: 18px;
+  letter-spacing: .2rem;
+}
+.body-content, .container, p{
+  font-size: 14px;
+  letter-spacing: .2rem;
+}
+
+button, .buttonchange {
+  color: #ffffff;
+  background-color: #c06bb9;
+  font-size: 20px;
+  border: 0px solid #ffffff;
+  border-radius: 40px;
+  padding: 15px 30px;
+  letter-spacing: 1.5px;
+  cursor: pointer
+}
+.indexButton, .buttonchange:hover {
+  color: #ffffff;
+  background-color: #a3008d;
+}
+.navbar-collapse, .nav-link {
+  color: #ffffff;
+  font-size: .8rem;
+  border-radius: 40px;
+  padding: 0 px 30px;
+  margin-right: 20px;
+  letter-spacing: 1.5px;
+  cursor: pointer
+}
+.nav-link:hover {
+  background-color: #cf6abd;
+  color: white;
+    
+}
+.toggle-button:hover{
+  background-color: #d14abf;
+
+}
+.navbar{
+  background-color: #eed2e9;
+}
+  /* 
+    index body ends
+  */
+
+  /* footer */
+  .copyright, .Terms{
+    font-weight:normal;
+  }
+  .footer{
+    background-color: #eed2e9;
+
+  }
+
+@media(max-width: 700px) {
+  /* 
+    navigation bar starts
+  */
+  .navbar-nav {
+    align-items: center;
+  }
+  .nav-link:hover {
+    background-color: #cf6abd;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: .9rem;
+  }
+  .navbar-brand{
+    font-size: .8rem;
+  }
+  .indexButton {
+      color: #ffffff;
+      background-color: #c06bb9;
+      font-size: .7rem;
+      border: 0px solid #ffffff;
+      border-radius: 40px;
+      padding: 7.5px 30px;
+      letter-spacing: .5px;
+      cursor: pointer
+    }
+    .body-content, .container, h1, p{
+
+      letter-spacing: .1rem;
+      font-size: 12px;
+    }
+    .body-content, .container{
+      padding: 30px;    
+    }
+    /* 
+    navigation bar ends
+  */
+
+
+
+}
