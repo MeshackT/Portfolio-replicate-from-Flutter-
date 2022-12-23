@@ -73,12 +73,13 @@
        <li class="nav-item">
           <a class="nav-link active" href="#portfolioIndex">Portfolio</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#contactIndex">Contact</a>
-        </li>
         <li class="nav-item ">
           <a class="nav-link active" href="#aboutIndex">About</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#contactIndex">Contact</a>
+        </li>
+        
         <div class="mx-4"></div>
       </ul>
     </div>
@@ -122,7 +123,7 @@
     <div class="container-fluid portfoliobackground">
       <div class="container">
         <div class="aboutustitle pb-5"><h2>PORTFOLIO</h2></div>
-<!-- create columns of cards in a bigger screen and rows in a smaller device -->
+        <!-- create columns of cards in a bigger screen and rows in a smaller device -->
         <div class="row">
           <div class="col-md-12 col-lg-6">
             <div class="card">
@@ -199,13 +200,14 @@
           </div>
           <div class="card-body">
             <div class=" text-center text-md-center">
-              <p>We are a team of software design for mobile and  web applications.<br>
-                Our vision is to be the best at what we do and be reliable designers for 
-                our clients. <br>We are passionate about what we do.<br>What inspires w
-                our creativity is our imagination.<br>We strive to make the 
-                best of our capabilities produce something fruitful for you as clients. 
-                Our goal is to create a software design that we will be 
-                able to develop eventually with all the technical programming skills we have.
+              <p>We are a team of software design for mobile and  web applications.
+              <br>Our vision is to be the best at what we do and be reliable designers for 
+              our clients. 
+              <br>We are passionate about what we do.
+              <br>What inspires our creativity is our imagination.
+              <br>We strive to make the best of our capabilities produce something fruitful for you as clients. 
+              Our goal is to create a software design that we will be 
+              able to develop eventually with all the technical programming skills we have.
               </p>
       
           </div>
@@ -237,18 +239,73 @@
   </div>
   </section>
 
-<!-- footer -->
-  <div class="footer container-fluid mt-0" >
-    <div class="row pb-3 pt-3 d-flex justify-content-start">
-      <br>
-      <div class="col-6 d-flex justify-content-start"><h6 class=" copyright ">copyright@webgooru</h6></div>
-      <br>
-      <div class="col-6 d-flex justify-content-end"><h6 class="Terms">Terms and Conditions</h6></div>
-      <br>
-    
-    </div>
-  </div>
 
+  <!-- use email js to submit the form in reality -->
+  <section id="contactIndex" class="contactBaground p-3">
+    <div class="container  " >
+      <div class="contactTitle  ">
+        <h2>Contact</h2>
+      </div>
+      <div class="container rounded-5 border containerContactBorder mt-3 mb-5">
+        <!-- validate using php -->
+        
+        <form action="/action_page.php" class="was-validated">
+          <!-- margin -->
+          <div class=" mt-0 mb-3">
+            <h3 class="fomrtitle">Form</h3>
+          </div>
+          <div class="mb-3 mt-3">
+            <!-- label -->
+            <label for="uname" class="fw-bold form-label float-start ">Your Name</label>
+            <!-- input -->
+            <input type="text" class="form-control" id="uname" placeholder="Enter your name" name="uname" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please enter your name.</div>
+          </div>
+          <div class="mb-3 mt-3">
+            <!-- label -->
+            <label for="uemail" class=" fw-bold form-label float-start">Your Email</label>
+            <!-- input -->
+            <input type="text" class="form-control" id="uemail" placeholder="Enter your email" name="uemail" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please enter your email address.</div>
+          </div>
+          <div class="mb-3 mt-3">
+            <!-- label -->
+            <label for="usubject" class=" fw-bold form-label float-start ">Your Name</label>
+            <!-- input -->
+            <input type="text" class="form-control" id="usubject" placeholder="Enter your subject" name="usubject" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please enter your subject.</div>
+          </div>
+          <div class="mb-3 mt-3">
+            <!-- label -->
+            <label for="umessage" class=" fw-bold form-label float-start ">Your Message</label>
+
+            <textarea type="text" class="form-control" id="umessage" placeholder="Enter your message" name="umessage" required rows="5"></textarea>
+
+            <div class="valid-feedback">Valid.</div>
+            <div class=" invalid-feedback">Please enter your message.</div>
+          </div>
+          
+          
+          <a type="submit" class="submitButton btn btn-outline  ps-4 pe-4 pt-3 pb-3" width="100px" href="#message">Submit</a>
+        </form>
+      </div>
+    </div>  
+  <section>
+
+<!-- footer -->
+<div class="container-fluid footerbackground mt-2 me-0 ms-0" >
+  <div class="row pb-3 pt-3 d-flex justify-content-start">
+    <br>
+    <div class="col-6 d-flex justify-content-start"><h6 class=" copyright ">copyright@webgooru</h6></div>
+    <br>
+    <div class="col-6 d-flex justify-content-end"><h6 class="Terms">Terms and Conditions</h6></div>
+    <br>
+  
+  </div>
+</div>
 
 
 </body>
