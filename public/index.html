@@ -9,6 +9,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="style.css">
 
+
   <!-- import these when I use firebase -->
   <script defer src="/__/firebase/9.15.0/firebase-app-compat.js"></script>
   <script defer src="/__/firebase/9.15.0/firebase-firestore-compat.js"></script>
@@ -48,16 +49,26 @@
         <!--my Logo-->
         <a class="navbar-brand d-flex justify-content-start" href="#home">Soft.</a>
       </ul>
-      <button class="navbar-toggler toggle-button" type="button"
-       data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <button class="navbar-toggler toggle-button" 
+        type="button"
+        data-bs-toggle="collapse" 
+        data-bs-target="#collapsibleNavbar"
+        aria-controls="collapsibleNavbar"
+        aria-expanded="false "
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
+
     </div>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <!-- Links -->
       <ul class="navbar-nav">
         <li class="nav-item ">
-          <a class="nav-link active" href="#homeIndex">Home</a>
+          <!-- this code closes the list after a click -->
+          <a class="nav-link active" 
+          href="#homeIndex">Home
+          </a>
         </li>
        <li class="nav-item">
           <a class="nav-link active" href="#portfolioIndex">Portfolio</a>
@@ -79,26 +90,19 @@
       <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner ">
           <div class="carousel-item active">
-            <img src="./images/one.png" class="rounded mx-auto d-block" alt="...">
+            <img src="./portfolio/one.png" class="rounded mx-auto d-block cimages" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="./images/two.png" class="rounded mx-auto d-block" alt="...">
+            <img src="./portfolio/two.png" class="rounded mx-auto d-block cimages" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="./images/three.png" class="rounded mx-auto d-block" alt="...">
+            <img src="./portfolio/three.png" class="rounded mx-auto d-block cimages" alt="...">
           </div>
         </div>
-        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button> -->
+
       </div>
       <!-- Text header -->
-    <h1 class="display-6 fw-bold mt-5 text-light mb-5">Welcom to our platform</h1>
+    <h1 class="display-6 fw-bold mt-5 text-light mb-2">Welcom to our platform</h1>
     <br>
     <p> We offer all solutions designed for mobile and websits applicaitions.<br>
       Our designs are inspired by your imagination.</p>
@@ -244,6 +248,8 @@
     
     </div>
   </div>
+
+
 
 </body>
 </html>

@@ -5,6 +5,7 @@ body{
   font-family: 'Poppins';
   
 }
+
 /* about section */
 #about, .portfoliobackground{
   background-color: white;
@@ -73,6 +74,10 @@ button, .buttonchange {
 }
 .navbar{
   background-color: #eed2e9;
+}
+.cimages{
+  width: 220px;
+  height: 170px;
 }
   /* 
     index body ends
